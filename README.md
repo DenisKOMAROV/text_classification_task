@@ -5,6 +5,8 @@ model, input preprocessed data, output predictions:
 
 [gdrive](https://drive.google.com/drive/folders/1CzaS1CY4axUER9boapae1Y-cyH-U32si?usp=share_link)
 
+**output predict csv path: data/output/rubert-tiny2_v3_tag_1668632322_predict.csv**
+
 ## This repo contains:
 
   EDA notebook 
