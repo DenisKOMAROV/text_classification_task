@@ -1,0 +1,18 @@
+version: '3.2'
+
+services:
+    text_classification:
+        shm_size: '2gb'
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                TOKEN: '42'
+                PORT: 8888
+        ports:
+            - 8888:8888 # [machine port]:[container port]
+        volumes:
+            - ./app:/app
+            - ./data:/data
+            - /etc/localtime:/etc/localtime:ro
+            - /etc/timezone:/etc/timezone:ro
